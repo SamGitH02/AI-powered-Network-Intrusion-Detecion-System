@@ -1,0 +1,42 @@
+{% extends 'bootstrap.html' %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2>Documentation</h2>
+    <p>Welcome to the Advanced Intrusion Detection System (IDS) documentation. This page provides an overview of the datasets, model, and features of the application.</p>
+
+    <h3>Datasets</h3>
+    <ul>
+        <li><strong>Cybersecurity Intrusion Data:</strong> Contains session-level data with features like network packet size, protocol type, and attack detection labels.</li>
+        <li><strong>Augmented Dataset:</strong> Includes detailed network flow metrics for intrusion detection, such as flow duration, packet lengths, and labels like DDoS and PortScan.</li>
+    </ul>
+
+    <h3>Model</h3>
+    <p>The application uses a deep learning model trained on the augmented dataset. The model is capable of detecting various types of network intrusions, including:</p>
+    <ul>
+        <li>Denial of Service (DoS) and Distributed Denial of Service (DDoS) attacks</li>
+        <li>Port and vulnerability scans</li>
+        <li>Man-in-the-middle attacks</li>
+        <li>Malware communication</li>
+    </ul>
+
+    <h3>Features</h3>
+    <ul>
+        <li><strong>Data Upload:</strong> Upload network traffic data in CSV or PCAP format for analysis.</li>
+        <li><strong>Visualization:</strong> Generate bar and pie charts to explore dataset distributions.</li>
+        <li><strong>Real-Time Monitoring:</strong> Continuously analyze network traffic for immediate threat detection.</li>
+        <li><strong>Threat Detection:</strong> Identify and classify network intrusions with high accuracy.</li>
+    </ul>
+
+    <h3>How to Use</h3>
+    <ol>
+        <li>Navigate to the <strong>Analyze</strong> page to upload your dataset.</li>
+        <li>View the analysis results, including detected threats and confidence scores.</li>
+        <li>Explore the <strong>Visualize</strong> page to generate charts for dataset insights.</li>
+        <li>Refer to this documentation for detailed information about the app.</li>
+    </ol>
+
+    <h3>Contact</h3>
+    <p>If you have any questions or need support, please contact us at <a href="mailto:support@advancedids.com">support@advancedids.com</a>.</p>
+</div>
+{% endblock %}
